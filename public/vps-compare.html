@@ -10,71 +10,81 @@
 <body>
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="index.html">VPS 建站教程</a>
+    <a class="logo" href="index.html"><span>VPS</span> 建站教程</a>
     <nav>
       <a href="index.html">首页</a>
-      <a href="vps-compare.html">VPS 选购对比</a>
+      <a href="vps-compare.html" class="active">VPS 选购对比</a>
       <a href="wordpress-site-1hour.html">1 小时建企业官网</a>
     </nav>
   </div>
 </header>
 
-<main class="wrap">
-  <h1>VPS 选购对比：建站 / 部署用哪家？</h1>
-  <p class="meta">更新时间：2026 年 11 月 · 价格以官网为准，下单前请再核对一次。</p>
+<main>
+  <div class="wrap">
+    <img class="cover-banner" src="images/vps-compare-cover.jpg" alt="服务器机房">
+    <h1>VPS 选购对比：建站 / 部署用哪家？</h1>
+    <p class="meta">更新时间：2026 年 11 月 · 价格以官网为准，下单前请再核对一次。</p>
 
-  <div class="notice">
-    说明：带 ★ 的链接是推广链接，通过它购买，我可能获得佣金，你的价格不变。
+    <div class="conclusion"><strong>一句话结论：</strong>建企业官网长期用，选 VMRack 2 核 2GB（$9.99/月常售罄，备选 $13/月定制版）；预算有限选 QQG.NET 年付 $39.99；站流量大选 YT.NET Core。</div>
+
+    <div class="notice">
+      说明：带 ★ 的链接是推广链接，通过它购买，我可能获得佣金，你的价格不变。
+    </div>
+
+    <p>下面三家都是我自己买过、用过的。建站用的 VPS，不用追求顶配，关键看三点：线路稳不稳、配置够不够、续费贵不贵。</p>
+
+    <div class="table-scroll">
+    <table>
+      <tr><th>商家</th><th>推荐套餐</th><th>配置</th><th>价格</th><th>线路</th></tr>
+      <tr class="pick">
+        <td><strong>VMRack</strong> ★<span class="badge">推荐</span></td>
+        <td>Premium L3（洛杉矶）</td>
+        <td>2 核 / 2GB 内存 / 20GB 硬盘</td>
+        <td>$9.99/月（经常售罄；备选：2 核 2GB 定制版 $13/月）</td>
+        <td>三网精品：电信 CN2、联通 9929、移动 CMIN2</td>
+      </tr>
+      <tr>
+        <td><strong>QQG.NET</strong></td>
+        <td>CN2 GIA 入门款（洛杉矶 LA2）</td>
+        <td>1 核 / 1GB 内存 / 10GB NVMe / 200Mbps / 每月 200GB 流量</td>
+        <td>$39.99/年，续费同价；进阶款 $59/年（流量 500GB/月）</td>
+        <td>CN2 GIA</td>
+      </tr>
+      <tr>
+        <td><strong>YT.NET（云途）</strong></td>
+        <td>洛杉矶精品 Core</td>
+        <td>2 核 / 2GB 内存 / 15GB 硬盘 / 300Mbps / 每月 1000GB 流量</td>
+        <td>¥500/年（Nano 款 ¥290/年，缺货；Turbo 款 ¥1080/年）</td>
+        <td>电信联通 9929、移动 CMIN2，美国原生 IP，20G 防御</td>
+      </tr>
+    </table>
+    </div>
+
+    <h2>三家怎么选</h2>
+
+    <h3>VMRack ★：线路最好，建站首选</h3>
+    <p>三条精品回程线路，国内访问最稳。2 核 2GB 跑 WordPress + 宝塔完全够用。缺点是 $9.99 的 L3 经常售罄，抢不到就买 $13/月的 2 核 2GB 定制版，配置一样。</p>
+    <p><a class="btn" href="https://www.vmrack.net?ref_code=5vLTWk6Bc1M" rel="sponsored" target="_blank">★ 去 VMRack 官网看看</a></p>
+
+    <h3>QQG.NET：预算有限，年付最便宜</h3>
+    <p>一年 $39.99，合每月约 $3.3，CN2 GIA 线路。缺点是只有 1 核 1GB，流量每月 200GB，适合访问量不大的小站；续费同价，不可退款，不支持 Windows。</p>
+
+    <h3>YT.NET：流量给得最大</h3>
+    <p>Core 款每月 1000GB 流量，年付 ¥500，适合流量大的站。注意：官网页面没有标注 CN2 GIA；年付是月付 ×10；退款只限 24 小时内且流量小于 200MB。</p>
+
+    <h2>结论</h2>
+    <ul>
+      <li><strong>建企业官网、长期用：选 VMRack</strong>，线路最稳，2 核 2GB 够用。</li>
+      <li><strong>预算有限、先试试：选 QQG.NET 年付 $39.99</strong>，一年成本最低。</li>
+      <li><strong>站流量大：选 YT.NET Core</strong>，每月 1000GB 流量最宽裕。</li>
+    </ul>
+    <p>三家我都实测过，排名就是上面这个顺序。买之前先想清楚自己的站要多少流量、多少配置，别只看价格。</p>
+
+    <div class="pager">
+      <a href="index.html"><span>← 上一篇</span>返回首页</a>
+      <a class="next" href="wordpress-site-1hour.html"><span>下一篇 →</span>1 小时用 VPS + Cloudflare + WordPress 建一个企业官网</a>
+    </div>
   </div>
-
-  <p>下面三家都是我自己买过、用过的。建站用的 VPS，不用追求顶配，关键看三点：线路稳不稳、配置够不够、续费贵不贵。</p>
-
-  <table>
-    <tr><th>商家</th><th>推荐套餐</th><th>配置</th><th>价格</th><th>线路</th></tr>
-    <tr>
-      <td><strong>VMRack</strong> ★</td>
-      <td>Premium L3（洛杉矶）</td>
-      <td>2 核 / 2GB 内存 / 20GB 硬盘</td>
-      <td>$9.99/月（经常售罄；备选：2 核 2GB 定制版 $13/月）</td>
-      <td>三网精品：电信 CN2、联通 9929、移动 CMIN2</td>
-    </tr>
-    <tr>
-      <td><strong>QQG.NET</strong></td>
-      <td>CN2 GIA 入门款（洛杉矶 LA2）</td>
-      <td>1 核 / 1GB 内存 / 10GB NVMe / 200Mbps / 每月 200GB 流量</td>
-      <td>$39.99/年，续费同价；进阶款 $59/年（流量 500GB/月）</td>
-      <td>CN2 GIA</td>
-    </tr>
-    <tr>
-      <td><strong>YT.NET（云途）</strong></td>
-      <td>洛杉矶精品 Core</td>
-      <td>2 核 / 2GB 内存 / 15GB 硬盘 / 300Mbps / 每月 1000GB 流量</td>
-      <td>¥500/年（Nano 款 ¥290/年，缺货；Turbo 款 ¥1080/年）</td>
-      <td>电信联通 9929、移动 CMIN2，美国原生 IP，20G 防御</td>
-    </tr>
-  </table>
-
-  <h2>三家怎么选</h2>
-
-  <h3>VMRack ★：线路最好，建站首选</h3>
-  <p>三条精品回程线路，国内访问最稳。2 核 2GB 跑 WordPress + 宝塔完全够用。缺点是 $9.99 的 L3 经常售罄，抢不到就买 $13/月的 2 核 2GB 定制版，配置一样。</p>
-  <p><a href="https://www.vmrack.net?ref_code=5vLTWk6Bc1M" rel="sponsored" target="_blank">★ 去 VMRack 官网看看</a></p>
-
-  <h3>QQG.NET：预算有限，年付最便宜</h3>
-  <p>一年 $39.99，合每月约 $3.3，CN2 GIA 线路。缺点是只有 1 核 1GB，流量每月 200GB，适合访问量不大的小站；续费同价，不可退款，不支持 Windows。</p>
-
-  <h3>YT.NET：流量给得最大</h3>
-  <p>Core 款每月 1000GB 流量，年付 ¥500，适合流量大的站。注意：官网页面没有标注 CN2 GIA；年付是月付 ×10；退款只限 24 小时内且流量小于 200MB。</p>
-
-  <h2>结论</h2>
-  <ul>
-    <li><strong>建企业官网、长期用：选 VMRack</strong>，线路最稳，2 核 2GB 够用。</li>
-    <li><strong>预算有限、先试试：选 QQG.NET 年付 $39.99</strong>，一年成本最低。</li>
-    <li><strong>站流量大：选 YT.NET Core</strong>，每月 1000GB 流量最宽裕。</li>
-  </ul>
-  <p>三家我都实测过，排名就是上面这个顺序。买之前先想清楚自己的站要多少流量、多少配置，别只看价格。</p>
-
-  <p><a href="wordpress-site-1hour.html">下一步：1 小时用 VPS + Cloudflare + WordPress 建一个企业官网 →</a></p>
 </main>
 
 <footer class="site-footer">
