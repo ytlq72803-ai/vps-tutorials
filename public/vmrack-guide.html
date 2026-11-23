@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>自建节点用什么 VPS？VMRack 选购指南 | VPS 建站教程</title>
+<meta name="description" content="我自己正在用的商家：VMRack 洛杉矶 2 核 2GB，跑 sing-box + 3x-ui。价格、线路、购买步骤和两个坑，一次讲清。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span>VPS</span> 建站教程</a>
+    <nav>
+      <a href="index.html">首页</a>
+      <a href="vps-compare.html">VPS 选购对比</a>
+      <a href="vmrack-guide.html" class="active">VMRack 指南</a>
+      <a href="wordpress-site-1hour.html">1 小时建企业官网</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <img class="cover-banner" src="images/vmrack-guide-cover.jpg" alt="交换机与网线">
+    <h1>自建节点用什么 VPS？VMRack 选购指南</h1>
+    <p class="meta">更新：2026-11-08 · 价格以官网结账页为准</p>
+
+    <div class="conclusion"><strong>一句话结论：</strong>这是我自己正在用的商家。我现在这台就是 VMRack 洛杉矶 2 核 2GB，跑 sing-box + 3x-ui，一个人用很稳。想照着抄作业，直接看下面自定义配置那档：2 核 2GB 精品线路 $13/月，或者 2 核 2GB 优化线路 $9/月。最便宜的 L3 精品 $9.99/月目前官网显示售罄，有货了再抢。</div>
+
+    <div class="notice">
+      <strong>推广披露：</strong>本文含有推广链接。如果你通过下面的链接注册并购买 VMRack，我可能获得一笔佣金，你的购买价格不变。佣金比例以 VMRack 控制台实际显示为准：官网推广页标题写最高 15%，但正文多处数字显示异常，本文不写死这个比例。提现方式和最低提现额同样以控制台为准。
+    </div>
+
+    <h2>我自己这台的使用情况</h2>
+    <p>机房洛杉矶，2 核 / 2GB，优化线路（163 / 10099），系统 Debian，上面同时跑 sing-box 和 3x-ui，只我一个人用。日常刷网页、看视频都够用，内存占用平时也就一半左右。之前出过问题是 IP 层面的个别协议不通，不是商家整台机器挂了。</p>
+
+    <h2>价格：先看这两档</h2>
+    <div class="table-scroll">
+    <table>
+      <tr><th>配置</th><th>价格</th><th>说明</th></tr>
+      <tr class="pick">
+        <td><strong>2 核 / 2GB · 精品线路 · 自定义配置</strong><span class="badge">推荐</span></td>
+        <td><strong>$13.00 / 月</strong></td>
+        <td>三网精品回程，500Mbps，1000GB 流量/月，Debian 13</td>
+      </tr>
+      <tr>
+        <td>2 核 / 2GB · 优化线路 · 自定义配置</td>
+        <td>$9.00 / 月</td>
+        <td>三网优化，5Gbps，2TB 流量/月；系统建议选 Debian 13，别选 CentOS</td>
+      </tr>
+      <tr>
+        <td>1 核 / 1GB · 精品线路 · 自定义配置</td>
+        <td>$11.50 / 月</td>
+        <td>一个人轻度用够用，但只比 2 核 2GB 便宜 $1.50，不划算</td>
+      </tr>
+      <tr>
+        <td>L3 精品 2 核 / 2GB · 固定套餐</td>
+        <td>$9.99 / 月</td>
+        <td>2026-11-08 官网检查仍显示售罄，补货时间未知</td>
+      </tr>
+    </table>
+    </div>
+    <p class="small">上面 $13 / $9 两档是 2026-11-05 在官网自定义配置器和结账页核实过的月付价，续费按显示价收。固定套餐的库存变化很快，下单前以官网实时显示为准。</p>
+
+    <h2>和另外两个选项对比</h2>
+    <div class="table-scroll">
+    <table>
+      <tr><th>商家 / 套餐</th><th>价格</th><th>线路</th><th>一句话</th></tr>
+      <tr class="pick">
+        <td><strong>VMRack 自定义 2C2G 精品</strong><span class="badge">推荐</span></td>
+        <td>$13.00/月</td>
+        <td>三网精品回程</td>
+        <td>我自己在用的同款配置，线路最好</td>
+      </tr>
+      <tr>
+        <td>QQG.NET CN2 GIA 入门</td>
+        <td>$39.99/年</td>
+        <td>CN2 GIA（洛杉矶 LA2）</td>
+        <td>最便宜，年付不到 300 块，配置低一点</td>
+      </tr>
+      <tr>
+        <td>搬瓦工 USCA_9 CN2 GIA-E</td>
+        <td>$169.99/年</td>
+        <td>CN2 GIA-E</td>
+        <td>贵，年付一次性付得多</td>
+      </tr>
+    </table>
+    </div>
+
+    <h2>购买步骤</h2>
+    <ol>
+      <li>点下面的推广链接打开 VMRack 官网注册账号。<strong>注意：点开链接后要在 24 小时内完成注册，超过要重新点；而且必须是新账号，老账号不算。</strong></li>
+      <li>进自定义配置，选洛杉矶 LAX-DC2，2 核 / 2GB，精品线路，系统选 Debian 13。</li>
+      <li>按页面提示付款，月付 $13，拿到 IP 后自己装 sing-box 或 xray。</li>
+    </ol>
+
+    <p><a class="btn" href="https://www.vmrack.net?ref_code=5vLTWk6Bc1M" rel="sponsored" target="_blank">★ 去 VMRack 官网看看</a></p>
+    <p class="small">推广链接已换成你自己的推广码，点开注册就归到你名下。</p>
+
+    <h2>两点提醒，别踩坑</h2>
+    <div class="warn">
+      <p>1. <strong>别用自己的推广链接给自己下单。</strong>被推荐的必须是没注册过的新用户，自己下单不算佣金，还可能被封。</p>
+      <p>2. <strong>固定套餐经常售罄，别死等。</strong>L3 $9.99 那档已经连续多天售罄，急着用就直接买上面 $13 自定义那档，配置一样，线路还更好。</p>
+    </div>
+
+    <p class="small">本文不构成购买保证。VPS 线路、库存和价格都可能变，下单前以官网结账页显示的最终价为准；退款政策以下单时官网条款为准。</p>
+
+    <div class="pager">
+      <a href="vps-compare.html"><span>← 上一篇</span>VPS 选购对比：建站 / 部署用哪家？</a>
+      <a class="next" href="wordpress-site-1hour.html"><span>下一篇 →</span>1 小时用 VPS + Cloudflare + WordPress 建一个企业官网</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>VPS 建站教程 · 内容仅供参考，价格以官网为准</p>
+    <p>本站不提供任何代理订阅服务，不出售节点。</p>
+  </div>
+</footer>
+</body>
+</html>

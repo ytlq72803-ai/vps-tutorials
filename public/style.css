@@ -103,9 +103,19 @@ li { margin-bottom: 6px; }
   color: #1e3a5f;
 }
 .conclusion strong { color: #1d4ed8; }
+.warn {
+  background: #fdf0f0;
+  border: 1px solid #e6a3a3;
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin: 0 0 20px;
+  font-size: 15px;
+}
+.warn p { margin: 0 0 8px; }
+.warn p:last-child { margin-bottom: 0; }
 
 /* ---- article cards (home) ---- */
-.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
 .card {
   display: block;
   background: #fff;
