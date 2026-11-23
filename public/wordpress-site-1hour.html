@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1 小时用 VPS + Cloudflare + WordPress 建一个企业官网 | VPS 建站教程</title>
+<meta name="description" content="全流程实操：买 VPS、解析域名、装宝塔、一键装 WordPress、上线产品页。以玻纤布生意为例。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">VPS 建站教程</a>
+    <nav>
+      <a href="index.html">首页</a>
+      <a href="vps-compare.html">VPS 选购对比</a>
+      <a href="wordpress-site-1hour.html">1 小时建企业官网</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>1 小时用 VPS + Cloudflare + WordPress 建一个企业官网</h1>
+  <p class="meta">全流程实操 · 以我自己的玻纤布生意为例</p>
+  <p>一个企业官网不需要找人花几千块。有一台 VPS、一个域名，1 小时就能上线。下面每一步都是我自己走过的流程。</p>
+
+  <div class="step">
+    <h3>第 1 步：买一台 VPS（10 分钟）</h3>
+    <p>配置不用高，2 核 2GB 就够跑 WordPress + 宝塔。线路要选国内访问稳的，参考<a href="vps-compare.html">选购对比</a>，我自己用的是 <a href="https://www.vmrack.net?ref_code=5vLTWk6Bc1M" rel="sponsored" target="_blank">VMRack ★</a> 的洛杉矶 2 核 2GB。系统选 Debian 或 CentOS 都行，记下 IP 和 root 密码。</p>
+  </div>
+
+  <div class="step">
+    <h3>第 2 步：域名解析到 VPS（5 分钟）</h3>
+    <p>域名在哪买的就在哪解析，或者托管到 Cloudflare（免费，还能挡一层攻击）。加一条 A 记录：主机名填 <code>@</code> 或 <code>www</code>，值填 VPS 的 IP。解析生效一般几分钟。</p>
+  </div>
+
+  <div class="step">
+    <h3>第 3 步：装宝塔面板（10 分钟）</h3>
+    <p>SSH 连上 VPS，执行宝塔官方安装命令（以 <a href="https://www.bt.cn/" target="_blank">bt.cn</a> 官网最新命令为准）：</p>
+    <pre><code>yum install -y wget &amp;&amp; wget -O install.sh https://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh ed8484bec</code></pre>
+    <p>装好后按提示打开面板地址，登录进去，一键装 LNMP 环境（Nginx + MySQL + PHP）。</p>
+  </div>
+
+  <div class="step">
+    <h3>第 4 步：一键部署 WordPress（10 分钟）</h3>
+    <p>宝塔面板 → 软件商店 → 一键部署 → WordPress。填域名、数据库名和密码，点部署。部署完打开域名，就能看到 WordPress 安装界面，按提示填站点标题、管理员账号，5 分钟装好。</p>
+  </div>
+
+  <div class="step">
+    <h3>第 5 步：换主题，建产品页（20 分钟）</h3>
+    <p>企业站不用花哨的主题，选个干净的免费主题就行。重点是把产品内容做好。以玻纤布生意为例，产品页至少要有：</p>
+    <ul>
+      <li>产品规格表：比如 7628、1080、2116 三种布的克重、幅宽、用途；</li>
+      <li>产品图片和应用场景；</li>
+      <li>询价表单：姓名、电话、要什么规格、要多少量，客户填完你就能收到。</li>
+    </ul>
+    <p>内容真实、规格清楚，比花里胡哨的设计重要得多。</p>
+  </div>
+
+  <div class="step">
+    <h3>第 6 步：上 SSL 证书（5 分钟）</h3>
+    <p>宝塔面板 → 网站 → 设置 → SSL → 申请免费的 Let's Encrypt 证书，开启强制 HTTPS。浏览器地址栏有了小锁，客户才敢填表单。</p>
+  </div>
+
+  <div class="step">
+    <h3>第 7 步：做好备份（5 分钟）</h3>
+    <p>宝塔计划任务里加两条定时备份：网站文件每天备份一次，数据库每天备份一次，备份存到另一台机器或对象存储。站可以重建，客户询价数据丢了就找不回来。</p>
+  </div>
+
+  <h2>这样建站要花多少钱</h2>
+  <ul>
+    <li>VPS：$9.99/月起（2 核 2GB，见<a href="vps-compare.html">选购对比</a>）；</li>
+    <li>域名：每年几十块；</li>
+    <li>Cloudflare、宝塔、WordPress、SSL 证书：免费。</li>
+  </ul>
+  <p>一年成本不到一千块，就有了一个自己的企业官网，还能拿来接客户询价。</p>
+
+  <h2>不想自己动手？</h2>
+  <p>可以找我代建：企业官网代建 ¥499–999（含域名解析、Cloudflare、基础 SEO），详见<a href="index.html">首页接单</a>。</p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>VPS 建站教程 · 内容仅供参考，价格以官网为准</p>
+    <p>本站不提供任何代理订阅服务，不出售节点。</p>
+  </div>
+</footer>
+</body>
+</html>
